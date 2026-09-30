@@ -1,0 +1,32 @@
+:root { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f4f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+.hero { background: linear-gradient(135deg, #15204b, #3153b7); color: white; padding: 56px 20px 72px; }
+.hero-inner { max-width: 980px; margin: auto; }
+.badge { display: inline-block; padding: 7px 11px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; font-size: 12px; letter-spacing: .12em; }
+h1 { margin: 14px 0 6px; font-size: clamp(42px, 8vw, 72px); line-height: 1; }
+h1 span { color: #9ee7ff; }
+.hero p { margin: 0; font-size: 18px; opacity: .9; }
+.container { max-width: 980px; margin: -36px auto 40px; padding: 0 18px; position: relative; }
+.card { background: white; border-radius: 18px; padding: 26px; box-shadow: 0 12px 35px rgba(20,35,70,.10); margin-bottom: 20px; }
+label { display: block; margin: 0 0 8px; font-weight: 700; }
+select, textarea { width: 100%; border: 1px solid #d6ddea; border-radius: 12px; padding: 13px 14px; font: inherit; margin-bottom: 18px; background: #fff; }
+textarea { resize: vertical; min-height: 180px; }
+select:focus, textarea:focus { outline: 3px solid rgba(49,83,183,.15); border-color: #3153b7; }
+.actions { display: flex; gap: 10px; }
+button { border: 0; border-radius: 11px; padding: 12px 20px; background: #3153b7; color: white; font-weight: 700; cursor: pointer; }
+button:hover { filter: brightness(.95); }
+button:disabled { opacity: .6; cursor: wait; }
+button.secondary { background: #eef2f8; color: #27334b; }
+button.small { padding: 8px 12px; font-size: 13px; }
+.result-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+h2 { margin: 0 0 16px; }
+#result { line-height: 1.7; white-space: pre-wrap; }
+.quiz-question { border: 1px solid #e0e5ee; border-radius: 14px; padding: 16px; margin: 12px 0; }
+.quiz-question h3 { margin-top: 0; }
+.option { padding: 9px 11px; background: #f7f9fc; border-radius: 9px; margin: 7px 0; }
+.answer { margin-top: 12px; padding: 10px; border-radius: 9px; background: #edf9f1; }
+.hidden { display: none !important; }
+.error { color: #9b1c1c; background: #fff0f0; padding: 14px; border-radius: 10px; }
+footer { text-align: center; color: #657086; padding: 10px 20px 30px; font-size: 13px; }
+@media (max-width: 600px) { .hero { padding: 40px 18px 60px; } .card { padding: 19px; } }
